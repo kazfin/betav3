@@ -1,0 +1,23 @@
+<!--Author(s): Ethan Scott-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Relationship | Bad Life Simulator</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="assets/fav-person.png">
+<noscript>Get a browser that was made past the year 1997 (one that supports javascript) or you can't play ¯\_(ツ)_/¯</noscript>
+</head>
+<body>
+<img class="button" src="assets/x.svg" id="x" style="top: 5%; left: 2%; transform: translate(-50%, -50%); width: 50px;">
+<img class="button" src="assets/left.svg" id="left" style="top: 12%; left: 2%; transform: translate(-50%, -50%); width: 40px;">
+<h1>Give money</h1>
+<br>
+<p id="whoGivingMoneyTo">You're giving money to your buddhist monk, Gerard.<p>
+<br><br>
+<input id="amount" type="number" value="1">
+<br><br>
+<button id="giveMoney" class="hand-cursor">Give money</button>
+<p id="moneyText" style="position: absolute; left: 50%; top: 90%; transform: translate(-50%, -50%); font-size: 20px; color: green;">Money: $0</p>
+<script type = "text/javascript" src="./js/variableChecker.js"></script><!--finds variables so money and stats stay consistent across pages.-->
+<script type = "text/javascript" src="./js/activitiesjs/giveMoney.js"></script>
+<script>document.getElementById("moneyText").innerHTML = "Money: $" + Money;</script><!--updates money text-->

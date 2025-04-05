@@ -1,0 +1,28 @@
+<!--Author(s): Ethan Scott-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Save | Bad Life Simulator</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="assets/fav.png">
+<noscript>Get a browser that was made past the year 1997 (one that supports javascript) or you can't play ¯\_(ツ)_/¯</noscript>
+</head>
+<body>
+<a href="./index.html"><img class="button" src="assets/left.svg" style="top: 5%; left: 2%; transform: translate(-50%, -50%); width: 50px;"></a>
+<a href="./developer.html"><img class="button" src="assets/developer.svg" style="top: 97%; left: 1.5%; transform: translate(-50%, -50%); width: 30px;"></a>
+<img src="assets/floppy.svg" style="position: absolute; top: 5%; left: 97%; transform: translate(-50%, -50%); width: 50px;">
+<h1>Save and Load</h1>
+<br><br>
+<div style="width: 100%; text-align: center;">
+<button id="jsonSave" class="hand-cursor">Save as File</button><br><br>
+<p>Load File:</p>
+<input type="file" id="idkthething" accept=".bls">
+</div>
+<br><br><br><br>
+<p style="font-size: 11px;">Bad Life Simulator saves and loads automatically after every action.<br>This page is just in case you want a solid backup of your current life and your achievements, stars, etc.</p>
+<br><br><br><br><br><br>
+<div style="width: 100%; text-align: center;">
+<button id="destroySave" class="hand-cursor">Destroy save</button>
+</div>
+<script type = "text/javascript" src="./js/variableChecker.js"></script><!--finds variables so money and stats stay consistent across pages.-->
+<script type = "text/javascript" src="./js/activitiesjs/localSave.js"></script><!--script that i made with no external asssistance for json saving-->

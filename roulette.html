@@ -1,0 +1,33 @@
+<!--Author(s): Ethan Scott-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Roulette | Bad Life Simulator</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="assets/activities/fav-lottery.png">
+<noscript>Get a browser that was made past the year 1997 (one that supports javascript) or you can't play ¯\_(ツ)_/¯</noscript>
+</head>
+<body>
+<a href="./activities-pg1.html"><img class="button" src="assets/left.svg" style="top: 5%; left: 2%; transform: translate(-50%, -50%); width: 50px;"></a>
+<img src="assets/coin.svg" style="position: absolute; top: 5%; left: 97%; transform: translate(-50%, -50%); width: 50px;">
+<h1>Roulette</h2>
+<p>Are you feeling lucky?</p>
+<br>
+<div style="text-align: center;">
+<img src="./assets/activities/red.png" id="red" width="50px" style="padding-left: 10px; padding-right: 10px; opacity: 25%;" class="hand-cursor"> 
+<img src="./assets/activities/black.png" id="black" width="50px" style="padding-left: 10px; padding-right: 10px; opacity: 25%;" class="hand-cursor">
+</div>
+<br>
+<p>Winning on colour pays 1.5:1</p>
+<p>Winning on number pays 10:1</p>
+<div style="text-align: center;">
+<p>Number</p>
+<input type="checkbox" disabled id="numenable" style="padding-left: 20px; padding-right: 20px;">
+<input type="number" min="1" max="32" placeholder="1-32" disabled id="numbox">
+<br><br><br><br><br>
+<button id="placebet" disabled>Place bet</button>
+</div>
+<p id="moneyText" style="position: absolute; left: 50%; top: 90%; transform: translate(-50%, -50%); font-size: 20px; color: green;">Money: $0</p>
+<script type = "text/javascript" src="./js/variableChecker.js"></script><!--finds variables so money and stats stay consistent across pages.-->
+<script type = "text/javascript" src="./js/activitiesjs/roulette.js"></script><!--runs the script for the lottery.-->
+<script>document.getElementById("moneyText").innerHTML = "Money: $" + Money;</script><!--updates money text-->

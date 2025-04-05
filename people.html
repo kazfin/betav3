@@ -1,0 +1,18 @@
+<!--Author(s): Ethan Scott-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>People | Bad Life Simulator</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="assets/fav-person.png">
+<noscript>Get a browser that was made past the year 1997 (one that supports javascript) or you can't play ¯\_(ツ)_/¯</noscript>
+</head>
+<body>
+<img src="assets/people.svg" style="position: absolute; top: 5%; left: 97%; transform: translate(-50%, -50%); width: 50px;">
+<a href="./home.html"><img class="button" src="assets/left.svg" style="top: 5%; left: 2%; transform: translate(-50%, -50%); width: 50px;"></a>
+<h1 id="jobOpportunityName">People</h1><br><br>
+<a href="./relationships.html"><img src="assets/activities/relationships.png" class="special-button" style="height: 40px; display: block; margin-left: auto; margin-right: auto;"></a><br>
+<a href="./community.html"><img src="assets/activities/community.png" class="special-button" style="height: 40px; display: block; margin-left: auto; margin-right: auto;"></a><br>
+<p id="moneyText" style="position: absolute; left: 50%; top: 90%; transform: translate(-50%, -50%); font-size: 20px; color: green;">Money: $0</p>
+<script type = "text/javascript" src="./js/variableChecker.js"></script><!--finds variables so money and stats stay consistent across pages.-->
+<script>document.getElementById("moneyText").innerHTML = "Money: $" + Money;</script><!--updates money text-->

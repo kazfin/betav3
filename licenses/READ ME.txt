@@ -1,0 +1,4 @@
+DEFINITIONS:
+SOFTWARE License refers to the game and all included code and software.
+SVG License refers to all SVG files.
+ASSET License refers to all PNG and XCF files.
